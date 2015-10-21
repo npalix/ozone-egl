@@ -40,6 +40,13 @@
               '-lGLESv2',
             ],
       },
+      'conditions': [
+          ['OS=="linux"', {
+            'defines': [
+              'LINUX',
+            ],
+	   }],
+      ],
     },
   ],
 }
